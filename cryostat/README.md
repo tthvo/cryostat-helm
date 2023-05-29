@@ -1,6 +1,33 @@
 # Cryostat Helm Chart
 A Helm chart for deploying [Cryostat](https://cryostat.io/) on Kubernetes and OpenShift
 
+## Usage
+
+[Helm](https://helm.sh) must be installed to use the charts.  Please refer to
+Helm's [documentation](https://helm.sh/docs) to get started.
+
+Once Helm has been set up correctly, add the repo as follows:
+
+```bash
+helm repo add cryostat https://cryostat.io/helm-charts
+```
+
+If you had already added this repo earlier, run `helm repo update` to retrieve
+the latest versions of the packages.  You can then run `helm search repo
+cryostat` to see the charts.
+
+To install the `cryostat` chart:
+
+```bash
+helm install cryostat-sample cryostat/cryostat
+```
+
+To uninstall the chart:
+
+```bash
+helm uninstall cryostat-sample
+```
+
 ## Parameters
 
 ### Cryostat Container
