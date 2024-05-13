@@ -70,6 +70,6 @@ jobs:
     - name: Install and test chart
       run: |
         kubectl create ns helm-test
-        ct install --target-branch ${TARGET_BRANCH} --upgrade --namespace=helm-test --config ct.yaml
+        ct install --target-branch ${TARGET_BRANCH} --upgrade --namespace=helm-test --config ct.yaml --debug
     - name: Clean up Kind cluster
       run: kind delete cluster -n ci-${{ github.run_id }}
