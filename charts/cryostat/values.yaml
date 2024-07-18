@@ -1,5 +1,5 @@
 ## @section Cryostat Container
-## @extra core Configuration for the core Cryostat application
+## @extra core Configurations for the core Cryostat application
 core:
   image:
     ## @param core.image.repository Repository for the main Cryostat container image
